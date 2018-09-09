@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Marck+Script" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(0,0,255,0.4);
+}
+div {
+  height: 200px;
+  /*background-size: cover;*/
+  background-size: 200px;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(255,0,0,0.7);
+  margin: 60px 0 0 0;
+}
+h2 {
+font-family: 'Marck script', cursive;
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+  background: rgba(255,255,255,1);
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/bHUcibp.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/sohgTNV.jpg");
+}
+.dessert{
+  background-image: url("http://i.imgur.com/yzuUuF9.jpg");
+}
+.price {
+  float: right;
+  background:white;
+  color:rgba(255,0,0,1);
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Alli Mobile Center</h1>
+<h2>Home of mobile technologies</h2>
+<div class="first">
+  <p>Samsung Galaxy S9+<span class="price"><del>₦320,000.00</del><b>  ₦298,000.00</b></span><br />
+  <small>SKU: s9 plus
+  <br>QUICK OVERVIEW
+  <br>Operating System – Android 8.0 (Oreo)
+  Screen Size – 6.2 inches (~84.2% screen-to-body ratio)
+  Processor – Octa-core (4×2.8 GHz Mongoose M3 & 4×1.7 GHz Cortex-A55)
+  Camera – 12 MP (Back), 8 MP, f/1.7, autofocus (Front)
+  Memory – 64 GB, 6 GB RAM
+  Colour – Midnight Black | Titanium Gray | Lilac Purple
+  Battery – Non-removable Li-Ion 3500 mAh battery (13.48 Wh)
+  Finger Print – Yes
+  Other Feature(s) – Build Corning Gorilla Glass 5 back panel</small></p>
+</div>
+
+<div class="second">
+  <p>Infinix Hot S<span class="price"><del>₦48,000.00</del><b>  ₦45,000.00</b></span><br />
+  <small>SKU: hot s
+  <br>QUICK OVERVIEW
+  <br>Key features:
+  Operating System – Android 6.0 Marshmallow
+  Screen Size – 5.2″ HD
+  Processor – Octa-Core
+  Camera – 13 MP (Back), 8 MP (Front)
+  Memory – 16 GB ROM, 2 GB RAM
+  Colour –
+  Battery – Non-removable 3000 mAh battery
+  Finger Print – Yes
+  Other Feature(s) –</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Tecno Camon CX<span class="price"> <del>₦56,500.00</del><b>  ₦54,400.00</b></span><br />
+  <small>SKU: Camon CX
+  <br>QUICK OVERVIEW
+  <br>Key features:
+  Operating System –  AndroidTM 7.0
+  Network – 4G
+  Screen Size – 5.5″ FHD IPS Touchscreen
+  Processor – 1.5 GHz Octa-Core
+  Camera – 16MP Front Camera with Dual Flash 16 AF Back Camera with Ring Flash
+  Memory – 16GB ROM 2GB RAM
+  Battery – 3200mAh Light Speed Charge
+  Finger Print – Yes
+  Other Feature(s) – Wifi: Yes, Bluetooth: Yes, GPS: Yes</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</body>

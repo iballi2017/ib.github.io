@@ -1,0 +1,140 @@
+body{
+    padding: none;
+    margin: 20px 40px;
+    font-family: Roboto;
+
+}
+.container{
+    width: 100%;
+}
+.container .menu-image{
+    width: 20px;
+    height: 10px;
+    float: right;
+}
+.container .menu-image:hover{
+    background-color: #ccc;
+    background-size: 10px;
+}
+.container .ventucon-logo{
+    width: 70px;
+    height: 40px;
+}
+.form-container{
+    width: 70%;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: -20px;
+    font-size: 10px;
+}
+.heading{
+    font-weight: 600;
+    font-size: 20px;
+}
+input{
+    width: 210px;
+    height: 20px;
+    font-size:10px;
+    background-color: none;
+    border: none;
+    border-bottom:1px solid #ccc;
+}
+textarea{
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-top: 10px;
+    padding: 6px 4px;
+    font-family: Roboto;
+    font-size: 10px;
+    text-align: justify;
+}
+button{
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(108, 132, 209);
+    color: #fff;
+    font-size: 10px;
+}
+button:hover{
+    background-color: rgb(108, 21, 221);
+}
+@media screen and (min-width: 768px){
+    .container{
+        height: 200px;
+    }
+    .container .menu-image{
+        width: 30px;
+        height: 15px;
+    }
+    .form-container{
+        width: 70%;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: -110px;
+        font-size: 10px;
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    input{
+        width: 100%;
+        height: 30px;
+        font-size:14px;
+    }
+    textarea{
+        font-size: 14px;
+        width: 460px;
+        padding: 15px 10px;
+        line-height: 20px;
+    }
+    button{
+        width: 120px;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(108, 132, 209);
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container .menu-image{
+        width: 40px;
+        height: 20px;
+    }
+    .container .ventucon-logo{
+        width: 100px;
+        height: 60px;
+    }
+    .form-container{
+        width: 60%;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: -80px;
+        font-size: 10px;
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 40px;
+    }
+    input{
+        width: 75%;
+        height: 40px;
+        font-size:17px;
+    }
+    textarea{
+        font-size: 17px;
+        width: 72%;
+        padding: 15px 10px;
+        line-height: 25px;
+    }
+    button{
+        width: 125px;
+        height: 43px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+}
